@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     
+<mapper namespace="roomreservation">
+
+<insert id="insert"  parameterType="java.util.Map">
+	INSERT INTO roomreservation (id,room_code,arrival_Date,departure_Date,totalpay)
+	VALUES (#{id},#{room_code},#{arrival_Date},#{departure_Date},#{totalpay})
+</insert>	    
+	    
+	    <select id="list" resultType="java.util.Map" parameterType="String">
+	    select  roomreservation.room_rsvdate,roomreservation.room_no,room.room_Name,roomreservation.totalpay,hotel.hotel_Name
+		from roomreservation 
+		join room 
+		on roomreservation.room_code = room.room_code
+		join hotel
+		on hotel.hotel_code = room.hotel_code
+		where id=#{id};
+	    </select>
+	    
+	    <select id="transList" resultType="java.util.Map" parameterType="String">
+    	SELECT TP.departure_Date, TP.departure_Time, TP.arrival_Time, TP.departure_code
+    		  ,TP.arrival_code, TI.trans_name, TP.Price, TR.transrs_seatno, TR.rsvdate, TR.id
+    	FROM transpro TP JOIN transreservation TR
+    	ON TP.transpro_code = TR.transpro_code
+    	JOIN transinfo TI
+    	ON TP.trans_code = TI.trans_code
+    	WHERE TR.id = #{id}    	
+    </select>
+
+	    
+</mapper>

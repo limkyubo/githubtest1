@@ -1,2 +1,2 @@
-# githubtest1
-dev lecture for github
+# GodTrip
+5조 갓지은여행
