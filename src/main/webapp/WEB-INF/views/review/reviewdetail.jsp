@@ -4,8 +4,8 @@ pageEncoding="UTF-8"%>
 <div class="col-sm-12">
 	<div class="container">
 <c:forEach var="reviewdetail" items="${list}"> 
- <h3>제목:${reviewdetail.title}</h3>
- <h6 style="text-align: right;">작성자:${reviewdetail.id}</h6>
+ <h3>제목 : ${reviewdetail.title}</h3>
+ <h6 style="text-align: right;">작성자 : ${reviewdetail.id}</h6>
  ${reviewdetail.content}
   </tr>
   <c:if test="${vs.count mod 5==0}">

@@ -213,6 +213,7 @@ public class TransCont {
 
 		
 		String transpro_code = req.getParameter("transpro_code");		
+		
 		//String s_id = "kim0602";
 		String id = (String) session.getAttribute("s_id");
 		//session.getAttribute() 메소드는 Object타입을 반환하기 때문에 (String) 추가

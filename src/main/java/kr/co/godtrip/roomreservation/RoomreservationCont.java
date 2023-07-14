@@ -57,9 +57,7 @@ public class RoomreservationCont {
 	    Date a_sqlDate = new java.sql.Date(a_parseDate.getTime());
 	    Date b_sqlDate = new java.sql.Date(b_parseDate.getTime());
 	    int resultTime = (int)(b_parseDate.getTime() - a_parseDate.getTime()) / (24 * 60 * 60 * 1000);
-	    if(a_sqlDate.getTime()<b_sqlDate.getTime()) {
-	    	System.out.println("굿");
-	    }
+	    
 	    //총가격
 	    if(resultTime==0) {
 	    	resultTime=1;

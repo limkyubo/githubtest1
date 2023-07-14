@@ -6,6 +6,7 @@ public class TransRsvDTO {
 	private String id;
 	private String transrs_seatno;
 	private String rsvdate;
+	private int price;
 	
 	public int getTransrs_no() {
 		return transrs_no;
@@ -36,14 +37,20 @@ public class TransRsvDTO {
 	}
 	public void setRsvdate(String rsvdate) {
 		this.rsvdate = rsvdate;
+	}	
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	@Override
 	public String toString() {
 		return "TransRsvDTO [transrs_no=" + transrs_no + ", transpro_code=" + transpro_code + ", id=" + id
-				+ ", transrs_seatno=" + transrs_seatno + ", rsvdate=" + rsvdate + "]";
+				+ ", transrs_seatno=" + transrs_seatno + ", rsvdate=" + rsvdate + ", price=" + price + "]";
 	}
-		
+	
 }
 
 

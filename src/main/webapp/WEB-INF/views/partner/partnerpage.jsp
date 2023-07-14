@@ -126,32 +126,35 @@
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0009'}">
 						대전
-					</c:when>					
+					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0010'}">
-						군산
+						남원
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0011'}">
-						영월
+						군산
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0012'}">
-						부산
+						영월
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0013'}">
-						경주
+						부산
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0014'}">
-						포항
+						경주
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0015'}">
-						통영거제
+						포항
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0016'}">
-						목포
+						통영거제
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0017'}">
-						여수
+						목포
 					</c:when>
 					<c:when test="${T_pro.departure_code == 'G0018'}">
+						여수
+					</c:when>
+					<c:when test="${T_pro.departure_code == 'G0019'}">
 						전주
 					</c:when>
 					<c:otherwise>
@@ -187,32 +190,35 @@
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0009'}">
 						대전
-					</c:when>					
+					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0010'}">
-						군산
+						남원
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0011'}">
-						영월
+						군산
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0012'}">
-						부산
+						영월
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0013'}">
-						경주
+						부산
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0014'}">
-						포항
+						경주
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0015'}">
-						통영거제
+						포항
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0016'}">
-						목포
+						통영거제
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0017'}">
-						여수
+						목포
 					</c:when>
 					<c:when test="${T_pro.arrival_code == 'G0018'}">
+						여수
+					</c:when>
+					<c:when test="${T_pro.arrival_code == 'G0019'}">
 						전주
 					</c:when>
 					<c:otherwise>

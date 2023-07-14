@@ -16,11 +16,11 @@ public class HomeController {
        http://localhost:9095
     */    
     
-	@RequestMapping("/home.do")
+	@RequestMapping("/home")
 	public ModelAndView home() {		
 		ModelAndView mav=new ModelAndView();
 		//redirect : 등록한 명령어를 호출할 수 있다
-		mav.setViewName("/home.do");
+		mav.setViewName("/home");
 		return mav; 
 	}//home() end
     
